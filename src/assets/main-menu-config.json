@@ -1,0 +1,23 @@
+{
+  "groups" : [
+    {
+      "name" : "apps",
+      "links" : [
+        {
+          "name" : "link1",
+          "icon" : "icon1"
+        },
+        {
+          "name" : "link2",
+          "icon" : "icon2"
+        }
+      ]
+    },
+    {
+      "name" : "ui elements",
+      "links" : [
+
+      ]
+    }
+  ]
+}
