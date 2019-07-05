@@ -10,6 +10,8 @@ import './registerServiceWorker'
 
 /* import styles */
 import './assets/styles.scss'
+import 'vue-material-design-icons/styles.css'
+
 
 /* Add axios as Vue prototype */
 // Vue.prototype.$http = ... ;
