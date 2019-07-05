@@ -11,6 +11,7 @@ import './registerServiceWorker'
 /* import styles */
 import './assets/styles.scss'
 import 'vue-material-design-icons/styles.css'
+import './icons'
 
 
 /* Add axios as Vue prototype */

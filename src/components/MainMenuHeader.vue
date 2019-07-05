@@ -6,7 +6,7 @@
       <div class="brand">
         <a class="">
           <div class="brand-logo">
-            X
+            <star-icon class="icon-2x icon-primary" />
           </div>
           <h2 class="brand-text">
             Vueser
@@ -17,7 +17,7 @@
 
       <!-- TOGGLE -->
       <div class="toggle">
-        O
+        <album-icon />
       </div>
       <!--  -->
 
@@ -80,6 +80,7 @@
 
   .brand-text {
     padding-left : 1rem;
+    color : #500afa;
   }
 
 </style>

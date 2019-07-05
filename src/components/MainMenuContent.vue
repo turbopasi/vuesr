@@ -1,7 +1,7 @@
 <template>
   <div class="main-menu-content">
     <div v-for="group in groups">
-      {{ group.name }}
+      <!-- {{ group.name }} -->
     </div>
   </div>
 </template>
