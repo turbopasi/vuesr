@@ -1,6 +1,8 @@
 <template>
-  <div class="">
-
+  <div class="main-menu-content">
+    <div v-for="group in groups">
+      {{ group.name }}
+    </div>
   </div>
 </template>
 
@@ -9,6 +11,7 @@
   export default {
     name: 'main-menu-content',
     props: {
+      groups : Array
     },
     data() {
       return {

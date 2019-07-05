@@ -1,7 +1,7 @@
 <template>
   <div class="main-menu">
     <main-menu-header />
-    <main-menu-content />
+    <main-menu-content :groups="config.groups"/>
   </div>
 </template>
 
@@ -9,6 +9,9 @@
 
   import MainMenuHeader  from '@/components/MainMenuHeader';
   import MainMenuContent from '@/components/MainMenuContent';
+
+  // Main Menu Config
+  import config from '@/assets/main-menu-config';
 
   export default {
     name : 'container-main-menu',
@@ -21,7 +24,7 @@
     },
     data() {
       return {
-
+        config : config
       }
     },
     computed : {
