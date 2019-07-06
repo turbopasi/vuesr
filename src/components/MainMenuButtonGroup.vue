@@ -5,7 +5,7 @@
     <!-- vue slot for buttons -->
     <slot></slot>
     <!--  -->
-    
+
   </div>
 </template>
 
@@ -37,11 +37,12 @@
 <style scoped lang="scss">
 
   .group-header {
-    padding : 1rem 1rem 1rem 1.64rem;
+    padding : 0;
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
     font-size:11px;
     color:rgba(0,0,0,0.7);
+    margin: calc(2.2rem - .2rem) 0 .8rem 2.2rem;
   }
 
 </style>

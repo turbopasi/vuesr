@@ -4,11 +4,12 @@
       "name" : "apps",
       "links" : [
         {
-          "name" : "link1",
-          "icon" : "icon1"
+          "name" : "Controller",
+          "icon" : "",
+          "badge": "New"
         },
         {
-          "name" : "link2",
+          "name" : "Engage",
           "icon" : "icon2"
         }
       ]
