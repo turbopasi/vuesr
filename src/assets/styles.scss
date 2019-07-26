@@ -1,12 +1,18 @@
 
-// Main Menu
+// MAIN MENU
 $main-menu-width-expanded : 260px;
 
 // COLORS
-$color-primary : #500afa;
+$color-primary   : #500afa;
+$color-secondary : #ffffff;
+$color-danger    : #ffffff;
+$color-warning   : #ffffff;
+$color-success   : #ffffff;
+$color-info      : #ffffff;
+$color-black     : #000000;
+$color-gray      : #555555;
 
 // ICONS
-
 .material-design-icon.icon-2x {
   height: 2em;
   width: 2em;
@@ -19,4 +25,12 @@ $color-primary : #500afa;
 
 .material-design-icon.icon-primary {
   color : $color-primary;
+}
+
+.material-design-icon.icon-black {
+  color : $color-black;
+}
+
+.material-design-icon.icon-gray {
+  color : $color-gray;
 }

@@ -2,7 +2,7 @@
   <div class="main-menu-button">
     <a>
       <div class="button-icon">
-        <component :is="'star-icon'" />
+        <component :is="'star-icon'" class="icon-gray" />
       </div>
       <div class="button-text">
         <span>{{ button.name }}</span>
