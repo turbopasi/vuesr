@@ -43,7 +43,7 @@
     methods : {
 
       toggleIsPinned() {
-        this.$emit('toggleIsPinned');
+        this.$store.dispatch('mainmenu/TOGGLE_IS_PINNED');
       }
 
     },

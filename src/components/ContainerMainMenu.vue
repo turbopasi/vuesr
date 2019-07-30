@@ -1,14 +1,10 @@
 <template>
-  <div
-    class="main-menu"
-    v-on:mouseover="mouseHover = !mouseHover"
-    :class="{
-      collapse : !isPinned && mouseHover
-    }"
-    >
-    <main-menu-header v-on:toggleIsPinned="toggleIsPinned" />
-    {{ mouseHover }}
-    <main-menu-content :groups="config.groups"/>
+  <div class="main-menu" >
+
+    <main-menu-header />
+    <main-menu-content
+      v-bind:groups="config.groups" />
+
   </div>
 </template>
 
@@ -23,7 +19,6 @@
   export default {
     name : 'container-main-menu',
     props : {
-
     },
     components : {
       MainMenuHeader,
@@ -32,18 +27,12 @@
     data() {
       return {
         config : config,
-        isPinned : false,
-        mouseHover : false,
       }
     },
     computed : {
-
+      isPinned() { return this.$store.state.mainmenu.isPinned }
     },
     methods : {
-
-      toggleIsPinned() {
-        this.isPinned = !this.isPinned;
-      }
 
     },
     mounted() {
