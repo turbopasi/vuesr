@@ -1,23 +1,54 @@
 {
   "groups" : [
     {
-      "name" : "apps",
+      "name" : "Hauptgruppe",
       "links" : [
         {
           "name" : "Controller",
           "icon" : "",
-          "badge": "New"
+          "badge": "Neu",
+          "badgeClass" : "is-success"
         },
         {
           "name" : "Engage",
-          "icon" : "icon2"
+          "icon" : "",
+          "badge" : 123,
+          "badgeClass" : "is-danger"
         }
       ]
     },
     {
-      "name" : "ui elements",
+      "name" : "Misc",
       "links" : [
-
+        {
+          "name" : "Messages",
+          "icon" : "",
+          "badge": "17",
+          "badgeClass" : "is-warning"
+        },
+        {
+          "name" : "Settings",
+          "icon" : "",
+          "badge" : "",
+          "badgeClass" : ""
+        }
+      ]
+    },
+    {
+      "name" : "Account",
+      "links" : [
+        {
+          "name" : "Payments",
+          "icon" : "",
+          "badge": "",
+          "badgeClass" : ""
+        },
+        {
+          "name" : "Boosts",
+          "icon" : "",
+          "badge" : "Active",
+          "badgeClass" : "is-info"
+        }
       ]
     }
   ]

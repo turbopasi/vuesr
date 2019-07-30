@@ -7,8 +7,8 @@
       <div class="button-text">
         <span>{{ button.name }}</span>
       </div>
-      <div class="button-badge" v-if="button.badge">
-        <span>{{ button.badge }}</span>
+      <div class="button-badge" :class="button.badgeClass" v-if="button.badge">
+        <p>{{ button.badge }}</p>
       </div>
     </a>
   </div>
@@ -46,6 +46,7 @@
     color:rgba(0,0,0,0.6);
     letter-spacing: 0.08rem;
     font-weight: 100;
+    cursor: pointer;
   }
 
   .main-menu-button a {
@@ -58,10 +59,19 @@
     line-height: 1.45;
   }
 
+  .main-menu-button:hover .button-text {
+    transform: translateX(5px);
+  }
+
+  .main-menu-button:hover .button-icon {
+    transform: translateX(5px);
+  }
+
   .button-icon {
     margin-right:1rem;
     display:flex;
     align-items: center;
+    transition: all 0.2s;
   }
 
   .button-text {
@@ -69,16 +79,16 @@
     align-items: center;
     padding-top:3px;
     flex:1;
+    transition: all 0.2s;
   }
 
   .button-badge {
     font-size:12px;
-    background:salmon;
     border-radius: 15px;
-    padding:1px 7px;
+    padding:1px 8px 0 7px;
     letter-spacing: normal;
     font-weight: normal;
-    color:white;
+    text-align: center;
   }
 
 </style>

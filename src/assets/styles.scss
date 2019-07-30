@@ -4,13 +4,14 @@ $main-menu-width-expanded : 260px;
 
 // COLORS
 $color-primary   : #500afa;
-$color-secondary : #ffffff;
-$color-danger    : #ffffff;
-$color-warning   : #ffffff;
-$color-success   : #ffffff;
-$color-info      : #ffffff;
+$color-secondary : #EC407A;
+$color-danger    : #E53935;
+$color-warning   : #FFD740;
+$color-success   : #00E676;
+$color-info      : #0277BD;
 $color-black     : #000000;
-$color-gray      : #555555;
+$color-dark      : #263238;
+$color-gray      : #607D8B;
 
 // ICONS
 .material-design-icon.icon-2x {
@@ -23,14 +24,18 @@ $color-gray      : #555555;
     width: 2em;
 }
 
-.material-design-icon.icon-primary {
-  color : $color-primary;
-}
+.material-design-icon.icon-primary { color : $color-primary; }
+.material-design-icon.icon-dark { color : $color-dark; }
+.material-design-icon.icon-gray { color : $color-gray; }
 
-.material-design-icon.icon-black {
-  color : $color-black;
-}
+////////// SIDE MENU BUTTON BADGE ////////////
 
-.material-design-icon.icon-gray {
-  color : $color-gray;
-}
+.button-badge.is-primary    { color : white; background : $color-primary; }
+.button-badge.is-secondary  { color : white; background : $color-secondary; }
+.button-badge.is-danger     { color : white; background : $color-danger; }
+.button-badge.is-warning    { color : white; background : $color-warning; }
+.button-badge.is-success    { color : white; background : $color-success; }
+.button-badge.is-info       { color : white; background : $color-info; }
+.button-badge.is-black      { color : white; background : $color-black; }
+.button-badge.is-dark       { color : white; background : $color-dark; }
+.button-badge.is-gray       { color : white; background : $color-gray; }
