@@ -16,8 +16,8 @@
       <!--  -->
 
       <!-- TOGGLE -->
-      <div class="toggle">
-        <album-icon />
+      <div class="toggle" @click="toggleIsPinned">
+        <album-icon class="icon-dark" />
       </div>
       <!--  -->
 
@@ -30,6 +30,7 @@
   export default {
     name: 'main-menu-header',
     props: {
+
     },
     data() {
       return {
@@ -40,6 +41,10 @@
 
     },
     methods : {
+
+      toggleIsPinned() {
+        this.$emit('toggleIsPinned');
+      }
 
     },
     mounted() {
@@ -81,6 +86,14 @@
   .brand-text {
     padding-left : 1rem;
     color : #500afa;
+  }
+
+  .toggle {
+    cursor: pointer;
+  }
+
+  .toggle:hover {
+
   }
 
 </style>

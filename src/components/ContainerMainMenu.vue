@@ -1,6 +1,13 @@
 <template>
-  <div class="main-menu">
-    <main-menu-header />
+  <div
+    class="main-menu"
+    v-on:mouseover="mouseHover = !mouseHover"
+    :class="{
+      collapse : !isPinned && mouseHover
+    }"
+    >
+    <main-menu-header v-on:toggleIsPinned="toggleIsPinned" />
+    {{ mouseHover }}
     <main-menu-content :groups="config.groups"/>
   </div>
 </template>
@@ -24,13 +31,19 @@
     },
     data() {
       return {
-        config : config
+        config : config,
+        isPinned : false,
+        mouseHover : false,
       }
     },
     computed : {
 
     },
     methods : {
+
+      toggleIsPinned() {
+        this.isPinned = !this.isPinned;
+      }
 
     },
     mounted() {
