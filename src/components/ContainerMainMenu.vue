@@ -1,9 +1,19 @@
 <template>
-  <div class="main-menu" >
+  <div class="main-menu"
+    v-on:mouseenter="setIsHover(true)"
+    v-on:mouseleave="setIsHover(false)"
+    :class="[ !isHover && !isPinned ? 'is-collapsed' : 'is-expanded' ]"
+    >
 
-    <main-menu-header />
+    <main-menu-header
+      v-bind:brandText="brandText"
+      v-bind:collapsed="shouldCollapse"
+      />
+
     <main-menu-content
-      v-bind:groups="config.groups" />
+      v-bind:groups="groups"
+      v-bind:collapsed="shouldCollapse"
+      />
 
   </div>
 </template>
@@ -14,7 +24,6 @@
   import MainMenuContent from '@/components/MainMenuContent';
 
   // Main Menu Config
-  import config from '@/assets/main-menu-config';
 
   export default {
     name : 'container-main-menu',
@@ -26,13 +35,20 @@
     },
     data() {
       return {
-        config : config,
+        isHover : false
       }
     },
     computed : {
-      isPinned() { return this.$store.state.mainmenu.isPinned }
+      isPinned() { return this.$store.state.mainmenu.isPinned },
+      groups() { return this.$store.state.mainmenu.groups },
+      brandText () { return this.$store.state.mainmenu.brandText },
+      shouldCollapse() { return !this.isHover && !this.isPinned }
     },
     methods : {
+
+      setIsHover(bool) {
+        this.isHover = bool;
+      },
 
     },
     mounted() {
@@ -46,11 +62,18 @@
 
   .main-menu {
     position : fixed;
-    width : 260px;
     height : 100%;
     background : #FFFFFF;
     display: table-cell;
     overflow:hidden;
+  }
+
+  .main-menu.is-collapsed {
+    width:85px;
+  }
+
+  .main-menu.is-expanded {
+    width:260px;
   }
 
 </style>

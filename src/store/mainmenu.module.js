@@ -4,15 +4,17 @@
 * brandText
 */
 
+import config from '@/assets/main-menu-config';
+
 const TOGGLE_IS_PINNED = "TOGGLE_IS_PINNED";
-const SET_IS_PINNED = "SET_IS_PINNED";
+const SET_IS_PINNED    = "SET_IS_PINNED";
 
 export const mainmenu = {
   namespaced : true,
   state : {
     brandText : "Vueser",
     isPinned  : true,
-    groups    : []
+    groups    : config.groups
   },
   actions : {
 

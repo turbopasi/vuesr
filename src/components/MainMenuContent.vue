@@ -6,12 +6,14 @@
       v-for="(group, groupindex) in groups"
       :group="group"
       :key="groupindex"
+      :collapsed="collapsed"
       >
       <!-- Buttons -->
       <main-menu-button
         v-for="(button, buttonindex) in group.links"
         :button="button"
         :key="buttonindex"
+        :collapsed="collapsed"
         />
     </main-menu-button-group>
     <!--  -->
@@ -27,7 +29,8 @@
   export default {
     name: 'main-menu-content',
     props: {
-      groups : Array
+      groups : Array,
+      collapsed : Boolean
     },
     components : {
       MainMenuButtonGroup,

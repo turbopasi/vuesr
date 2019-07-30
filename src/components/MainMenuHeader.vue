@@ -8,15 +8,15 @@
           <div class="brand-logo">
             <star-icon class="icon-2x icon-primary" />
           </div>
-          <h2 class="brand-text">
-            Vueser
+          <h2 class="brand-text" v-if="!collapsed">
+            {{ brandText }}
           </h2>
         </a>
       </div>
       <!--  -->
 
       <!-- TOGGLE -->
-      <div class="toggle" @click="toggleIsPinned">
+      <div class="toggle" @click="toggleIsPinned" v-if="!collapsed">
         <album-icon class="icon-dark" />
       </div>
       <!--  -->
@@ -30,7 +30,8 @@
   export default {
     name: 'main-menu-header',
     props: {
-
+      brandText : String,
+      collapsed : Boolean
     },
     data() {
       return {

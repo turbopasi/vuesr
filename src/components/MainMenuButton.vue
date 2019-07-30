@@ -4,10 +4,10 @@
       <div class="button-icon">
         <component :is="'star-icon'" class="icon-primary" />
       </div>
-      <div class="button-text">
+      <div class="button-text" v-if="!collapsed">
         <span>{{ button.name }}</span>
       </div>
-      <div class="button-badge" :class="button.badgeClass" v-if="button.badge">
+      <div class="button-badge" :class="button.badgeClass" v-if="button.badge && !collapsed">
         <p>{{ button.badge }}</p>
       </div>
     </a>
@@ -17,9 +17,10 @@
 <script>
 
   export default {
-    name: 'main-menu-button',
-    props: {
-      button: Object
+    name : 'main-menu-button',
+    props : {
+      button : Object,
+      collapsed : Boolean
     },
     data() {
       return {

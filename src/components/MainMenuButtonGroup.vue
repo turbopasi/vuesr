@@ -1,6 +1,6 @@
 <template>
   <div class="main-menu-button-group">
-    <p class="group-header">{{ group.name }}</p>
+    <p class="group-header" v-if="!collapsed">{{ group.name }}</p>
 
     <!-- vue slot for buttons -->
     <slot></slot>
@@ -14,7 +14,8 @@
   export default {
     name : 'main-menu-button-group',
     props : {
-      group : Object
+      group : Object,
+      collapsed : Boolean
     },
     data() {
       return {
