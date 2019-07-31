@@ -8,6 +8,7 @@
     <main-menu-header
       v-bind:brandText="brandText"
       v-bind:collapsed="shouldCollapse"
+      v-bind:isPinned="isPinned"
       />
 
     <main-menu-content
@@ -66,6 +67,7 @@
     background : #FFFFFF;
     display: table-cell;
     overflow:hidden;
+    transition: width 0.3s;
   }
 
   .main-menu.is-collapsed {

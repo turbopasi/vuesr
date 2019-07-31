@@ -56,4 +56,8 @@
 
 <style scoped lang="scss">
 
+  .is-collapsed .main-menu-content {
+    margin-top:40px;
+  }
+
 </style>

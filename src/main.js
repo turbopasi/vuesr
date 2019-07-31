@@ -10,7 +10,7 @@ import './registerServiceWorker'
 
 /* import styles */
 import './assets/styles.scss'
-import 'vue-material-design-icons/styles.css'
+import 'remixicon/fonts/remixicon.css'
 import './icons'
 
 

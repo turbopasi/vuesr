@@ -6,7 +6,7 @@
       <div class="brand">
         <a class="">
           <div class="brand-logo">
-            <star-icon class="icon-2x icon-primary" />
+            <i class="remixicon-star-fill ri-2x" />
           </div>
           <h2 class="brand-text" v-if="!collapsed">
             {{ brandText }}
@@ -17,7 +17,8 @@
 
       <!-- TOGGLE -->
       <div class="toggle" @click="toggleIsPinned" v-if="!collapsed">
-        <album-icon class="icon-dark" />
+        <i class="remixicon-album-line" v-if="isPinned"></i>
+        <i class="remixicon-checkbox-blank-circle-line" v-else></i>
       </div>
       <!--  -->
 
@@ -31,7 +32,8 @@
     name: 'main-menu-header',
     props: {
       brandText : String,
-      collapsed : Boolean
+      collapsed : Boolean,
+      isPinned : Boolean
     },
     data() {
       return {

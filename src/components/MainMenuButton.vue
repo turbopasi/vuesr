@@ -2,7 +2,7 @@
   <div class="main-menu-button">
     <a>
       <div class="button-icon">
-        <component :is="'star-icon'" class="icon-primary" />
+        <i :class=" 'remixicon-' + button.icon " class="ri-lg" ></i>
       </div>
       <div class="button-text" v-if="!collapsed">
         <span>{{ button.name }}</span>
@@ -42,6 +42,10 @@
 
 <style scoped lang="scss">
 
+  .is-collapsed .main-menu-button {
+    margin-bottom:10px;
+  }
+
   .main-menu-button {
     padding : 0 15px;
     color:rgba(0,0,0,0.6);
@@ -51,7 +55,7 @@
   }
 
   .main-menu-button a {
-    padding : 10px 15px;
+    padding : 10px 17px;
     display : block;
     text-overflow: ellipsis;
     overflow: hidden;
