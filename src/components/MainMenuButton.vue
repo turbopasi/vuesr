@@ -10,6 +10,9 @@
       <div class="button-badge" :class="button.badgeClass" v-if="button.badge && !collapsed">
         <p>{{ button.badge }}</p>
       </div>
+      <div class="button-badge-indicator" :class="button.badgeClass" v-if="button.badge && collapsed">
+        <p></p>
+      </div>
     </a>
   </div>
 </template>
@@ -94,6 +97,22 @@
     letter-spacing: normal;
     font-weight: normal;
     text-align: center;
+  }
+
+  .is-collapsed .button-badge-indicator {
+    width: 8px;
+  }
+
+  .is-expanded .button-badge-indicator {
+    width: 0px;
+  }
+
+  .button-badge-indicator {
+    height:3px;
+    background:white;
+    position:absolute;
+    right:0px;
+    margin-top:0px;
   }
 
   // DARK MODE ADJUSTMENT

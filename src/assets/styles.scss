@@ -30,12 +30,12 @@ $color-gray      : #607D8B;
 
 ////////// SIDE MENU BUTTON BADGE ////////////
 
-.button-badge.is-primary    { color : white; background : $color-primary; }
-.button-badge.is-secondary  { color : white; background : $color-secondary; }
-.button-badge.is-danger     { color : white; background : $color-danger; }
-.button-badge.is-warning    { color : white; background : $color-warning; }
-.button-badge.is-success    { color : white; background : $color-success; }
-.button-badge.is-info       { color : white; background : $color-info; }
-.button-badge.is-black      { color : white; background : $color-black; }
-.button-badge.is-dark       { color : white; background : $color-dark; }
-.button-badge.is-gray       { color : white; background : $color-gray; }
+.button-badge.is-primary, .button-badge-indicator.is-primary      { color : white; background : $color-primary; }
+.button-badge.is-secondary, .button-badge-indicator.is-secondary  { color : white; background : $color-secondary; }
+.button-badge.is-danger,  .button-badge-indicator.is-danger       { color : white; background : $color-danger; }
+.button-badge.is-warning, .button-badge-indicator.is-warning      { color : black; background : $color-warning; }
+.button-badge.is-success, .button-badge-indicator.is-success      { color : black; background : $color-success; }
+.button-badge.is-info, .button-badge-indicator.is-info            { color : white; background : $color-info; }
+.button-badge.is-black, .button-badge-indicator.is-black          { color : white; background : $color-black; }
+.button-badge.is-dark, .button-badge-indicator.is-dark            { color : white; background : $color-dark; }
+.button-badge.is-gray, .button-badge-indicator.is-gray            { color : white; background : $color-gray; }

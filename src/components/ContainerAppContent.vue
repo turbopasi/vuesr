@@ -1,5 +1,5 @@
 <template>
-  <div class="app-content">
+  <div class="app-content" :class="{ 'full-width' : !mainMenuIsPinned }">
 
   </div>
 </template>
@@ -17,7 +17,7 @@
       }
     },
     computed : {
-
+      mainMenuIsPinned() { return this.$store.state.mainmenu.isPinned },
     },
     methods : {
 
@@ -30,5 +30,16 @@
 </script>
 
 <style scoped lang="scss">
+
+  .app-content {
+    padding : 30px;
+    margin-left : 260px;
+  }
+
+  .app-content.full-width {
+    margin-left : 85px;
+  }
+
+
 
 </style>
