@@ -6,7 +6,8 @@
       <div class="brand">
         <a class="">
           <div class="brand-logo">
-            <i class="remixicon-star-fill ri-2x" />
+            <!-- <i class="remixicon-star-fill ri-2x" /> -->
+            <img src="@/assets/logo-menu.png" alt="">
           </div>
           <h2 class="brand-text" v-if="!collapsed">
             {{ brandText }}
@@ -86,9 +87,12 @@
     width : 35px;
   }
 
+  .brand-logo img {
+    width:100%;
+  }
+
   .brand-text {
     padding-left : 1rem;
-    color : #500afa;
   }
 
   .toggle {

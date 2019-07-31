@@ -12,7 +12,7 @@ const SET_IS_PINNED    = "SET_IS_PINNED";
 export const mainmenu = {
   namespaced : true,
   state : {
-    brandText : "Vueser",
+    brandText : "vueser",
     isPinned  : true,
     groups    : config.groups
   },
