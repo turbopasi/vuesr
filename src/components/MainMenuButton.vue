@@ -96,4 +96,14 @@
     text-align: center;
   }
 
+  // DARK MODE ADJUSTMENT
+
+  .is-darkmode .button-icon {
+    color:#E1E1E1;
+  }
+
+  .is-darkmode .button-text {
+    color:#E1E1E1;
+  }
+
 </style>

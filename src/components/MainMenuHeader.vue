@@ -99,8 +99,15 @@
     cursor: pointer;
   }
 
-  .toggle:hover {
+  // DARK MODE ADJUSTMENTS
 
+  .is-darkmode .brand-text {
+    color:#fff;
   }
+
+  .is-darkmode .toggle {
+    color:#fff;
+  }
+
 
 </style>

@@ -64,10 +64,14 @@
   .main-menu {
     position : fixed;
     height : 100%;
-    background : #FFFFFF;
     display: table-cell;
     overflow:hidden;
     transition: width 0.3s;
+    background:#fff;
+  }
+
+  .is-darkmode .main-menu {
+    background:#222;
   }
 
   .main-menu.is-collapsed {

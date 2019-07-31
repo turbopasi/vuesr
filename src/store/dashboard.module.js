@@ -7,18 +7,18 @@
 const TOGGLE_DARK_MODE = "TOGGLE_DARK_MODE";
 const SET_DARK_MODE    = "SET_DARK_MODE";
 
-export const mainmenu = {
+export const dashboard = {
   namespaced : true,
   state : {
-    darkmode : false
+    isDarkmode : true
   },
   actions : {
 
     [TOGGLE_DARK_MODE] : ({ commit, state }) => {
-      commit(SET_DARK_MODE, !state.darkmode);
+      commit(SET_DARK_MODE, !state.isDarkmode);
     },
 
-    [SET_IS_PINNED] : ({ commit }, bool) => {
+    [SET_DARK_MODE] : ({ commit }, bool) => {
       commit(SET_DARK_MODE, bool);
     }
 
@@ -26,7 +26,7 @@ export const mainmenu = {
   mutations : {
 
     [SET_DARK_MODE] : (state, bool) => {
-      state.darkmode = bool;
+      state.isDarkmode = bool;
     }
 
   }

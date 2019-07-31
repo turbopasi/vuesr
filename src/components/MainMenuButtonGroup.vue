@@ -46,4 +46,10 @@
     margin: calc(2.2rem - .2rem) 0 .8rem 2.2rem;
   }
 
+  // DARK MODE ADJUSTMENT
+
+  .is-darkmode .group-header {
+    color : rgba(255,255,255,0.5);
+  }
+
 </style>
