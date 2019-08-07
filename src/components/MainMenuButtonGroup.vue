@@ -1,7 +1,6 @@
 <template>
   <div class="main-menu-button-group">
-    <p class="group-header" v-if="!collapsed">{{ group.name ? '- ' + group.name : '' }}</p>
-    <p class="groupd-header-collapsed" v-else>{{ group.name ? '-' : '' }}</p>
+    <p class="group-header" v-if="!collapsed">{{ group.name ? group.name : '' }}</p>
     <!-- vue slot for buttons -->
     <slot></slot>
     <!--  -->

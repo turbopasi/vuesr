@@ -1,6 +1,6 @@
 <template>
   <div class="app-content" :class="{ 'full-width' : !mainMenuIsPinned }">
-
+    <router-view/>
   </div>
 </template>
 
