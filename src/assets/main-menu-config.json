@@ -1,22 +1,65 @@
 {
   "groups" : [
     {
-      "name" : "apps",
+      "name" : "",
       "links" : [
         {
-          "name" : "link1",
-          "icon" : "icon1"
-        },
-        {
-          "name" : "link2",
-          "icon" : "icon2"
+          "name" : "Controller",
+          "path" : "/controller",
+          "icon" : "home-outline",
+          "badge": "Neu",
+          "badgeClass" : "is-success"
         }
       ]
     },
     {
-      "name" : "ui elements",
+      "name" : "Hauptgruppe",
       "links" : [
-
+        {
+          "name" : "Engage",
+          "path" : "/engage",
+          "icon" : "face",
+          "badge" : 123,
+          "badgeClass" : "is-danger"
+        }
+      ]
+    },
+    {
+      "name" : "Misc",
+      "links" : [
+        {
+          "name" : "Messages",
+          "path" : "/messages",
+          "icon" : "message-outline",
+          "badge": "17",
+          "badgeClass" : "is-warning"
+        },
+        {
+          "name" : "Settings",
+          "path" : "/settings",
+          "icon" : "settings-outline",
+          "badge" : "",
+          "badgeClass" : ""
+        }
+      ]
+    },
+    {
+      "name" : "Account",
+      "links" : [
+        {
+          "name" : "Payments",
+          "path" : "/payments",
+          "icon" : "paypal",
+          "badge": "",
+          "badgeClass" : ""
+        },
+        {
+          "name" : "Boosts",
+          "path" : "/boosts",
+          "icon" : "star-outline",
+          "badge" : "Active",
+          "badgeClass" : "is-info"
+        }
       ]
     }
   ]

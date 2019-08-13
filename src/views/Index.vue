@@ -1,5 +1,5 @@
 <template>
-  <div class="index">
+  <div class="index" :class="[ isDarkmode ? 'is-darkmode' : 'is-lightmode' ]">
     <container-main-menu />
     <container-app-content />
   </div>
@@ -16,11 +16,26 @@
     components: {
       ContainerAppContent,
       ContainerMainMenu
+    },
+    computed : {
+      isDarkmode() { return this.$store.state.dashboard.isDarkmode; }
     }
   }
 
 </script>
 
 <style lang="scss">
+
+.index {
+  min-height:100vh;
+}
+
+.index.is-darkmode {
+  background:#2A2A2A;
+}
+
+.index.is-lightmode {
+  background:#F8F8F8;
+}
 
 </style>

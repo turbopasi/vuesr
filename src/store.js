@@ -1,11 +1,15 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from 'vue';
+import Vuex from 'vuex';
 
-Vue.use(Vuex)
+import { mainmenu } from '@/store/mainmenu.module';
+import { dashboard } from '@/store/dashboard.module';
+
+Vue.use(Vuex);
 
 export default new Vuex.Store({
   modules : {
-
+    mainmenu,
+    dashboard
   },
   state : {
 
@@ -16,4 +20,4 @@ export default new Vuex.Store({
   actions : {
 
   }
-})
+});
