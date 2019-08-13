@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import Buefy from 'buefy'
 import App from './App.vue'
 
 /* vue-router & vuex store */
@@ -8,11 +9,10 @@ import store from './store'
 /* PWA Support added by vue/cli */
 import './registerServiceWorker'
 
-/* import styles */
+/* import own styles & buefy */
 import './assets/styles.scss'
-import 'remixicon/fonts/remixicon.css'
-import './icons'
-
+import 'buefy/dist/buefy.css'
+Vue.use(Buefy)
 
 /* Add axios as Vue prototype */
 // Vue.prototype.$http = ... ;

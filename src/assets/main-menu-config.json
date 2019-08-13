@@ -6,7 +6,7 @@
         {
           "name" : "Controller",
           "path" : "/controller",
-          "icon" : "home-smile-2-line",
+          "icon" : "home-outline",
           "badge": "Neu",
           "badgeClass" : "is-success"
         }
@@ -18,7 +18,7 @@
         {
           "name" : "Engage",
           "path" : "/engage",
-          "icon" : "bar-chart-box-line",
+          "icon" : "face",
           "badge" : 123,
           "badgeClass" : "is-danger"
         }
@@ -30,14 +30,14 @@
         {
           "name" : "Messages",
           "path" : "/messages",
-          "icon" : "router-line",
+          "icon" : "message-outline",
           "badge": "17",
           "badgeClass" : "is-warning"
         },
         {
           "name" : "Settings",
           "path" : "/settings",
-          "icon" : "settings-line",
+          "icon" : "settings-outline",
           "badge" : "",
           "badgeClass" : ""
         }
@@ -49,14 +49,14 @@
         {
           "name" : "Payments",
           "path" : "/payments",
-          "icon" : "bank-card-line",
+          "icon" : "paypal",
           "badge": "",
           "badgeClass" : ""
         },
         {
           "name" : "Boosts",
           "path" : "/boosts",
-          "icon" : "arrow-up-circle-line",
+          "icon" : "star-outline",
           "badge" : "Active",
           "badgeClass" : "is-info"
         }

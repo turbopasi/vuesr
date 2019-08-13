@@ -1,5 +1,5 @@
 <template>
-  <div class="index" :class="{ 'is-darkmode' : isDarkmode }">
+  <div class="index" :class="[ isDarkmode ? 'is-darkmode' : 'is-lightmode' ]">
     <container-main-menu />
     <container-app-content />
   </div>
@@ -32,6 +32,10 @@
 
 .index.is-darkmode {
   background:#2A2A2A;
+}
+
+.index.is-lightmode {
+  background:#F8F8F8;
 }
 
 </style>

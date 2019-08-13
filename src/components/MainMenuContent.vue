@@ -1,20 +1,28 @@
 <template>
+
+  <!-- Content of Main Menu -->
+  <!-- Includes all groups and nav buttons -->
+
   <div class="main-menu-content">
 
     <!-- Button Groups -->
+    <!-- All nav buttons will be inserted into slot of group component -->
     <main-menu-button-group
       v-for="(group, groupindex) in groups"
       :group="group"
       :key="groupindex"
       :collapsed="collapsed"
       >
-      <!-- Buttons -->
+
+      <!-- SLOT -->
       <main-menu-button
         v-for="(button, buttonindex) in group.links"
         :button="button"
         :key="buttonindex"
         :collapsed="collapsed"
         />
+      <!-- SLOT : END -->
+
     </main-menu-button-group>
     <!--  -->
 
