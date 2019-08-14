@@ -19,10 +19,12 @@
 
     <!-- Content of Main Menu -->
     <!-- Includes all groups and nav buttons -->
+    <vue-perfect-scrollbar class="scroll-area" :settings="settings" @ps-scroll-y="scrollHandle">
     <main-menu-content
       v-bind:groups="groups"
       v-bind:collapsed="shouldBeCollapsed"
       />
+    </vue-perfect-scrollbar>
 
   </div>
 </template>
@@ -31,18 +33,23 @@
 
   import MainMenuHeader  from '@/components/MainMenuHeader';
   import MainMenuContent from '@/components/MainMenuContent';
-
-  // Main Menu Config
+  import VuePerfectScrollbar from 'vue-perfect-scrollbar'
 
   export default {
     name : 'container-main-menu',
     components : {
       MainMenuHeader,
-      MainMenuContent
+      MainMenuContent,
+      VuePerfectScrollbar
     },
     data() {
       return {
-        isHover : false
+        isHover  : false,
+        settings : {
+          //maxScrollbarLength : 60,
+          wheelSpeed : 1,
+          wheelPropagation: true
+        }
       }
     },
     computed : {
@@ -57,6 +64,9 @@
         this.isHover = bool;
       },
 
+      scrollHandle(event) {
+      }
+
     }
   }
 
@@ -68,7 +78,7 @@
     position : fixed;
     height : 100%;
     display: table-cell;
-    overflow:hidden;
+    overflow: hidden;
     transition: width 0.3s;
   }
 
@@ -78,6 +88,12 @@
 
   .main-menu.is-expanded {
     width:260px;
+  }
+
+  .scroll-area {
+    position : relative;
+    margin : auto;
+    max-height : calc(100vh - 120px);
   }
 
   // DARK MODE ADJUSTMENTS

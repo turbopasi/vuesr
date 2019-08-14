@@ -89,7 +89,7 @@
   }
 
   .is-collapsed .main-menu-button {
-    margin-bottom:10px;
+    margin-bottom : 2px;
   }
 
   .is-expanded .button-badge-indicator {

@@ -40,12 +40,66 @@
           "icon" : "settings-outline",
           "badge" : "",
           "badgeClass" : ""
+        },
+        {
+          "name" : "Settings",
+          "path" : "/settings",
+          "icon" : "settings-outline",
+          "badge" : "",
+          "badgeClass" : ""
         }
       ]
     },
     {
       "name" : "Account",
       "links" : [
+        {
+          "name" : "Payments",
+          "path" : "/payments",
+          "icon" : "paypal",
+          "badge": "",
+          "badgeClass" : ""
+        },
+        {
+          "name" : "Payments",
+          "path" : "/payments",
+          "icon" : "paypal",
+          "badge": "",
+          "badgeClass" : ""
+        },
+        {
+          "name" : "Payments",
+          "path" : "/payments",
+          "icon" : "paypal",
+          "badge": "",
+          "badgeClass" : ""
+        },
+        {
+          "name" : "Payments",
+          "path" : "/payments",
+          "icon" : "paypal",
+          "badge": "",
+          "badgeClass" : ""
+        },
+        {
+          "name" : "Boosts",
+          "path" : "/boosts",
+          "icon" : "star-outline",
+          "badge" : "Active",
+          "badgeClass" : "is-info"
+        }
+      ]
+    },
+    {
+      "name" : "Hauptgruppe",
+      "links" : [
+        {
+          "name" : "Engage",
+          "path" : "/engage",
+          "icon" : "face",
+          "badge" : 123,
+          "badgeClass" : "is-danger"
+        },
         {
           "name" : "Payments",
           "path" : "/payments",
