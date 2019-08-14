@@ -13,9 +13,9 @@
           <div class="brand-logo">
             <img src="@/assets/logo-menu.png" alt="Logo">
           </div>
-          <h2 class="brand-text" v-if="!collapsed">
+          <h3 class="brand-text is-size-4" v-if="!collapsed">
             {{ brandText }}
-          </h2>
+          </h3>
         </router-link>
       </div>
       <!--  -->
@@ -84,11 +84,13 @@
   }
 
   .brand-logo {
+    padding-top:10px;
     width : 35px;
   }
 
   .brand-text {
     padding-left : 1rem;
+    font-weight : 600;
   }
 
   .toggle {
