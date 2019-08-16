@@ -80,6 +80,7 @@
     display: table-cell;
     overflow: hidden;
     transition: width 0.3s;
+    z-index : 999;
   }
 
   .main-menu.is-collapsed {
