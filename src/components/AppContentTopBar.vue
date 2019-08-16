@@ -2,7 +2,9 @@
 
   <!-- App Content Top Bar -->
   <div class="app-content-top-bar" :class="{ 'full-width' : !mainMenuIsPinned }" >
-
+    <div class="inner">
+      <slot></slot>
+    </div>
   </div>
 
 </template>
@@ -12,8 +14,6 @@
   export default {
     name: 'app-content-top-bar',
     props: {
-      hotlinks : Array,
-      account  : Object,
       mainMenuIsPinned : Boolean
     },
     data() {
@@ -42,6 +42,13 @@
     position:fixed;
     border-radius:5px;
     width:calc(100% - 320px);
+    top:30px;
+
+  }
+
+  .inner {
+    display: flex;
+    align-items: center;
   }
 
   .app-content-top-bar.full-width {

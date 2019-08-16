@@ -9,10 +9,18 @@
     <!-- Includes various hotlinks, account avatar, language, messages, ...  -->
     <!-- Can depend on current route -->
     <app-content-top-bar
-      v-bind:hotlinks="hotlinks"
-      v-bind:account="account"
       v-bind:mainMenuIsPinned="mainMenuIsPinned"
       >
+
+      <!-- Slot : Top Bar Hotlinks -->
+      <top-bar-hotlinks
+        v-bind:hotlinks="hotlinks" />
+
+      <!-- Slot : Darkmode toggle -->
+      <div class="field">
+        <b-switch v-model="isDarkmode" :rounded="false"></b-switch>
+      </div>
+
     </app-content-top-bar>
 
     <router-view/>
@@ -22,11 +30,13 @@
 <script>
 
   import AppContentTopBar from '@/components/AppContentTopBar';
+  import TopBarHotlinks from '@/components/TopBarHotlinks';
 
   export default {
     name : 'container-app-content',
     components : {
-      AppContentTopBar
+      AppContentTopBar,
+      TopBarHotlinks
     },
     props : {
       msg : String
@@ -34,12 +44,16 @@
     data() {
       return {
         //temp
-        hotlinks : [],
         account  : {}
       }
     },
     computed : {
       mainMenuIsPinned() { return this.$store.state.mainmenu.isPinned },
+      hotlinks()         { return this.$store.state.topbar.hotlinks   },
+      isDarkmode       : {
+        get()         { return this.$store.state.dashboard.isDarkmode              },
+        set(newvalue) { this.$store.dispatch('dashboard/SET_DARK_MODE', newvalue); }
+      }
     }
   }
 
@@ -55,7 +69,5 @@
   .app-content.full-width {
     margin-left : 85px;
   }
-
-
 
 </style>

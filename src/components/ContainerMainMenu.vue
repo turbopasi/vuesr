@@ -75,6 +75,7 @@
 <style scoped lang="scss">
 
   .main-menu {
+    top: 0;
     position : fixed;
     height : 100%;
     display: table-cell;

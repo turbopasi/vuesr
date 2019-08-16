@@ -1,0 +1,24 @@
+{
+  "hotlinks" : [
+    {
+      "name" : "Controller",
+      "path" : "/controller",
+      "icon" : "home-outline"
+    },
+    {
+      "name" : "Engage",
+      "path" : "/engage",
+      "icon" : "face"
+    },
+    {
+      "name" : "Settings",
+      "path" : "/settings",
+      "icon" : "settings-outline"
+    },
+    {
+      "name" : "Favourites",
+      "path" : "/favourites",
+      "icon" : "star-outline"
+    }
+  ]
+}
