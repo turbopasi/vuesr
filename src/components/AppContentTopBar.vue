@@ -43,16 +43,16 @@
     border-radius:5px;
     width:calc(100% - 320px);
     top:30px;
+    box-shadow: 0 1px 20px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.05);
+  }
 
+  .app-content-top-bar.full-width {
+    width:calc(100% - 145px);
   }
 
   .inner {
     display: flex;
     align-items: center;
-  }
-
-  .app-content-top-bar.full-width {
-    width:calc(100% - 145px);
   }
 
   .is-darkmode .app-content-top-bar { background: #222222; }

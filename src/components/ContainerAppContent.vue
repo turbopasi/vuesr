@@ -14,6 +14,7 @@
 
       <!-- Slot : Top Bar Hotlinks -->
       <top-bar-hotlinks
+        v-bind:isDarkmode="isDarkmode"
         v-bind:hotlinks="hotlinks" />
 
       <!-- Slot : Darkmode toggle -->

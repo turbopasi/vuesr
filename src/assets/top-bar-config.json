@@ -3,22 +3,26 @@
     {
       "name" : "Controller",
       "path" : "/controller",
-      "icon" : "home-outline"
+      "icon" : "home-outline",
+      "highlight" : false
     },
     {
       "name" : "Engage",
       "path" : "/engage",
-      "icon" : "face"
+      "icon" : "face",
+      "highlight" : false
     },
     {
       "name" : "Settings",
       "path" : "/settings",
-      "icon" : "settings-outline"
+      "icon" : "settings-outline",
+      "highlight" : false
     },
     {
       "name" : "Favourites",
       "path" : "/favourites",
-      "icon" : "star-outline"
+      "icon" : "star-outline",
+      "highlight" : true
     }
   ]
 }
