@@ -1,6 +1,6 @@
 <template>
   <div id="" class="">
-    <h1> Sub route component of "/" > "/controller" </h1>
+    <h1></h1>
   </div>
 </template>
 

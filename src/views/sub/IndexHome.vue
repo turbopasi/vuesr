@@ -1,6 +1,6 @@
 <template>
   <div id="" class="">
-    <h1> Base route component of "/" Index </h1>
+    <h1></h1>
   </div>
 </template>
 
