@@ -2,12 +2,18 @@
   <!-- App Content Breadcrumbs -->
   <div class="app-content-breadcrumbs" >
     <div class="inner">
+
+      <!-- Title of the page -->
       <h1 class="title" v-if="showTitle" :class="{'has-breadcrumb' : showBreadcrumb}">{{ title }}</h1>
+
+      <!-- Breadcrumb -->
       <p v-if="showBreadcrumb">
-        <span v-for="(crumb, index) in breadcrumbList" :class="{'last-crumb' : index == breadcrumbList.length - 1 }">
-          {{ crumb.name }} <span class="crumb-trenner" v-if="index < breadcrumbList.length - 1">&#187;</span>
-        </span>
+        <template v-for="(crumb, index) in breadcrumbList">
+          <span :class="[index == breadcrumbList.length - 1 ? 'last-crumb' : 'crumb']"> {{ crumb.name }} </span>
+          <span class="crumb-trenner" v-if="index < breadcrumbList.length - 1">&#187</span>
+        </template>
       </p>
+
     </div>
   </div>
 </template>
@@ -80,6 +86,14 @@
     letter-spacing: 2px;
   }
 
+  .inner p span.crumb {
+    cursor: pointer;
+  }
+
+  .inner p span.last-crumb, .inner p span.crumb-trenner {
+    cursor: default;
+  }
+
   .crumb-trenner {
     margin-right:7px;
     margin-left:5px;
@@ -88,11 +102,13 @@
   .is-darkmode h1   { color:#C1C1C1; }
   .is-darkmode p    { color: white; }
   .is-darkmode p span { color : #888; }
+  .is-darkmode p span.crumb:hover { color : white; text-decoration: underline; }
   .is-darkmode p span.last-crumb { color : white; }
 
   .is-lightmode h1  { color:#999999; }
   .is-lightmode p   { color: black; }
   .is-lightmode p span { color : #999; }
+  .is-lightmode p span.crumb:hover { color : black; text-decoration: underline; }
   .is-lightmode p span.last-crumb { color : black; }
 
 </style>
