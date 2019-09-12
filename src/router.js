@@ -22,9 +22,7 @@ export default new Router({
             showTitle : true,
             title : "Home",
             showBreadcrumb : false,
-            breadcrumb : [
-              { name : 'Home' }
-            ]
+            breadcrumb : []
           }
         },
         {
@@ -35,7 +33,7 @@ export default new Router({
             title : "Controller",
             showBreadcrumb : true,
             breadcrumb : [
-              { name : 'Home' },
+              { name : 'Home', link : "/" },
               { name : 'Controller' }
             ]
           }

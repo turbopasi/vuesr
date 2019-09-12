@@ -9,7 +9,10 @@
       <!-- Breadcrumb -->
       <p v-if="showBreadcrumb">
         <template v-for="(crumb, index) in breadcrumbList">
-          <span :class="[index == breadcrumbList.length - 1 ? 'last-crumb' : 'crumb']"> {{ crumb.name }} </span>
+          <router-link :to="crumb.link" v-if="crumb.link">
+            <span :class="[index == breadcrumbList.length - 1 ? 'last-crumb' : 'crumb']"> {{ crumb.name }} </span>
+          </router-link>
+          <span v-else :class="[index == breadcrumbList.length - 1 ? 'last-crumb' : 'crumb']"> {{ crumb.name }} </span>
           <span class="crumb-trenner" v-if="index < breadcrumbList.length - 1">&#187</span>
         </template>
       </p>
