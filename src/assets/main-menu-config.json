@@ -13,7 +13,7 @@
       ]
     },
     {
-      "name": "Hauptgruppe",
+      "name": "Group One",
       "links": [
         {
           "name": "Engage",
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "name": "Misc",
+      "name": "Group Two",
       "links": [
         {
           "name": "Messages",
@@ -44,7 +44,7 @@
       ]
     },
     {
-      "name": "Account",
+      "name": "Group Three",
       "links": [
         {
           "name": "Payments",
