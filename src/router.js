@@ -27,7 +27,11 @@ export default new Router({
         },
         {
           path: "controller",
-          component: IndexController,
+          components: {
+            default : IndexController,
+            one : IndexHome,
+            two : IndexController
+          },
           meta : {
             showTitle : true,
             title : "Controller",

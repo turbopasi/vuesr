@@ -28,21 +28,26 @@
     <app-content-breadcrumbs />
 
     <!-- Sub Router View -->
-    <router-view />
+    <!-- App Content Board -->
+    <app-content-board />
+
   </div>
 </template>
 
 <script>
+
 import AppContentTopBar from "@/components/AppContentTopBar";
 import TopBarHotlinks from "@/components/TopBarHotlinks";
 import AppContentBreadcrumbs from "@/components/AppContentBreadcrumbs";
+import AppContentBoard from "@/components/AppContentBoard";
 
 export default {
   name: "container-app-content",
   components: {
     AppContentTopBar,
     TopBarHotlinks,
-    AppContentBreadcrumbs
+    AppContentBreadcrumbs,
+    AppContentBoard
   },
   props: {
     msg: String
