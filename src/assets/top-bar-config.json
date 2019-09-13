@@ -1,8 +1,8 @@
 {
   "hotlinks" : [
     {
-      "name" : "Controller",
-      "path" : "/controller",
+      "name" : "Home",
+      "path" : "/",
       "icon" : "home-outline",
       "highlight" : false
     },

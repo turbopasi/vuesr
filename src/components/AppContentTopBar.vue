@@ -50,6 +50,14 @@
     width:calc(100% - 145px);
   }
 
+  .app-content-top-bar::after {
+    position:absolute;
+    content: ' ';
+    height:30px;
+    width:100%;
+    top:-30px;
+  }
+
   .inner {
     display: flex;
     align-items: center;
@@ -57,5 +65,8 @@
 
   .is-darkmode .app-content-top-bar { background: #222222; }
   .is-lightmode .app-content-top-bar { background: #FFFFFF; }
+
+  .is-darkmode .app-content-top-bar::after { background: #2A2A2A; }
+  .is-lightmode .app-content-top-bar::after { background: #F8F8F8; }
 
 </style>

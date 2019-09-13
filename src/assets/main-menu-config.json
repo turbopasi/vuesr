@@ -4,16 +4,16 @@
       "name": "",
       "links": [
         {
-          "name": "Controller",
-          "path": "/controller",
-          "icon": "home-outline",
+          "name": "Dashboard",
+          "path": "/dashboard",
+          "icon": "view-list",
           "badge": "Neu",
           "badgeClass": "is-success"
         }
       ]
     },
     {
-      "name": "Hauptgruppe",
+      "name": "Group One",
       "links": [
         {
           "name": "Engage",
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "name": "Misc",
+      "name": "Group Two",
       "links": [
         {
           "name": "Messages",
@@ -44,7 +44,7 @@
       ]
     },
     {
-      "name": "Account",
+      "name": "Group Three",
       "links": [
         {
           "name": "Payments",

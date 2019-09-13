@@ -1,6 +1,6 @@
 <template>
   <div id="" class="">
-    <h1>test test test</h1>
+    <h1>INDEX OF CONTROLLER SUB ROUTE</h1>
   </div>
 </template>
 

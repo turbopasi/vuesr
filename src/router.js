@@ -26,15 +26,19 @@ export default new Router({
           }
         },
         {
-          path: "controller",
-          component: IndexController,
+          path: "dashboard",
+          components: {
+            default : IndexController,
+            one : IndexHome,
+            two : IndexController
+          },
           meta : {
             showTitle : true,
-            title : "Controller",
+            title : "Dashboard",
             showBreadcrumb : true,
             breadcrumb : [
               { name : 'Home', link : "/" },
-              { name : 'Controller' }
+              { name : 'Dashboard' }
             ]
           }
         },

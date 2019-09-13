@@ -71,11 +71,14 @@
   .button-icon {
     margin-right : 1rem;
     transition : transform 0.2s;
+    display:flex;
+    align-items: center;
   }
 
   .button-text {
     flex : 1;
     transition: transform 0.2s;
+    margin-top: -2px;
   }
 
   .button-badge {

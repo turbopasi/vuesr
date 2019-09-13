@@ -48,7 +48,8 @@
         settings : {
           //maxScrollbarLength : 60,
           wheelSpeed : 1,
-          wheelPropagation: true
+          wheelPropagation: true,
+          suppressScrollX : true
         }
       }
     },
