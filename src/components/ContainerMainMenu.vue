@@ -75,11 +75,14 @@
 <style scoped lang="scss">
 
   .main-menu {
+    top: 0;
     position : fixed;
     height : 100%;
     display: table-cell;
     overflow: hidden;
     transition: width 0.3s;
+    z-index : 999;
+    box-shadow: 0 1px 20px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.05);
   }
 
   .main-menu.is-collapsed {

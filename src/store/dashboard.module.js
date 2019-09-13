@@ -10,7 +10,7 @@ const SET_DARK_MODE    = "SET_DARK_MODE";
 export const dashboard = {
   namespaced : true,
   state : {
-    isDarkmode : false
+    isDarkmode : true
   },
   actions : {
 

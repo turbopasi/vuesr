@@ -1,118 +1,64 @@
 {
-  "groups" : [
+  "groups": [
     {
-      "name" : "",
-      "links" : [
+      "name": "",
+      "links": [
         {
-          "name" : "Controller",
-          "path" : "/controller",
-          "icon" : "home-outline",
+          "name": "Controller",
+          "path": "/controller",
+          "icon": "home-outline",
           "badge": "Neu",
-          "badgeClass" : "is-success"
+          "badgeClass": "is-success"
         }
       ]
     },
     {
-      "name" : "Hauptgruppe",
-      "links" : [
+      "name": "Hauptgruppe",
+      "links": [
         {
-          "name" : "Engage",
-          "path" : "/engage",
-          "icon" : "face",
-          "badge" : 123,
-          "badgeClass" : "is-danger"
+          "name": "Engage",
+          "path": "/engage",
+          "icon": "face",
+          "badge": 123,
+          "badgeClass": "is-danger"
         }
       ]
     },
     {
-      "name" : "Misc",
-      "links" : [
+      "name": "Misc",
+      "links": [
         {
-          "name" : "Messages",
-          "path" : "/messages",
-          "icon" : "message-outline",
+          "name": "Messages",
+          "path": "/messages",
+          "icon": "message-outline",
           "badge": "17",
-          "badgeClass" : "is-warning"
+          "badgeClass": "is-warning"
         },
         {
-          "name" : "Settings",
-          "path" : "/settings",
-          "icon" : "settings-outline",
-          "badge" : "",
-          "badgeClass" : ""
-        },
-        {
-          "name" : "Settings",
-          "path" : "/settings",
-          "icon" : "settings-outline",
-          "badge" : "",
-          "badgeClass" : ""
+          "name": "Settings",
+          "path": "/settings",
+          "icon": "settings-outline",
+          "badge": "",
+          "badgeClass": ""
         }
       ]
     },
     {
-      "name" : "Account",
-      "links" : [
+      "name": "Account",
+      "links": [
         {
-          "name" : "Payments",
-          "path" : "/payments",
-          "icon" : "paypal",
+          "name": "Payments",
+          "path": "/payments",
+          "icon": "paypal",
           "badge": "",
-          "badgeClass" : ""
+          "badgeClass": ""
         },
         {
-          "name" : "Payments",
-          "path" : "/payments",
-          "icon" : "paypal",
-          "badge": "",
-          "badgeClass" : ""
-        },
-        {
-          "name" : "Payments",
-          "path" : "/payments",
-          "icon" : "paypal",
-          "badge": "",
-          "badgeClass" : ""
-        },
-        {
-          "name" : "Payments",
-          "path" : "/payments",
-          "icon" : "paypal",
-          "badge": "",
-          "badgeClass" : ""
-        },
-        {
-          "name" : "Boosts",
-          "path" : "/boosts",
-          "icon" : "star-outline",
-          "badge" : "Active",
-          "badgeClass" : "is-info"
-        }
-      ]
-    },
-    {
-      "name" : "Hauptgruppe",
-      "links" : [
-        {
-          "name" : "Engage",
-          "path" : "/engage",
-          "icon" : "face",
-          "badge" : 123,
-          "badgeClass" : "is-danger"
-        },
-        {
-          "name" : "Payments",
-          "path" : "/payments",
-          "icon" : "paypal",
-          "badge": "",
-          "badgeClass" : ""
-        },
-        {
-          "name" : "Boosts",
-          "path" : "/boosts",
-          "icon" : "star-outline",
-          "badge" : "Active",
-          "badgeClass" : "is-info"
+          "name": "Boosts",
+          "path": "/boosts",
+          "icon": "star-outline",
+          "badge": "Active",
+          "badgeClass": "is-info"
         }
       ]
     }

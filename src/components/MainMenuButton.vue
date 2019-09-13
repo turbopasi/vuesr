@@ -70,12 +70,12 @@
 
   .button-icon {
     margin-right : 1rem;
-    transition : all 0.2s;
+    transition : transform 0.2s;
   }
 
   .button-text {
     flex : 1;
-    transition: all 0.2s;
+    transition: transform 0.2s;
   }
 
   .button-badge {

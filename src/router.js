@@ -1,40 +1,55 @@
-import Vue       from 'vue'
-import Router    from 'vue-router'
-import Index     from './views/Index.vue'
-import IndexHome from './views/sub/IndexHome.vue'
-import IndexController from './views/sub/IndexController.vue'
+import Vue from "vue";
+import Router from "vue-router";
+import Index from "./views/Index.vue";
+import IndexHome from "./views/sub/IndexHome.vue";
+import IndexController from "./views/sub/IndexController.vue";
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
   routes: [
     {
-      path      : '/',
-      name      : 'index',
-      component : Index,
-      children  : [
+      path: "/",
+      name: "index",
+      component: Index,
+      children: [
         {
-          path      : '',
-          component : IndexHome
+          path: "",
+          component: IndexHome,
+          meta : {
+            showTitle : true,
+            title : "Home",
+            showBreadcrumb : false,
+            breadcrumb : []
+          }
         },
         {
-          path      : 'controller',
-          component : IndexController
+          path: "controller",
+          component: IndexController,
+          meta : {
+            showTitle : true,
+            title : "Controller",
+            showBreadcrumb : true,
+            breadcrumb : [
+              { name : 'Home', link : "/" },
+              { name : 'Controller' }
+            ]
+          }
         },
         {
-          path : 'engage'
+          path: "engage"
         }
       ]
     },
     {
-      path : '/signin',
-      name : 'signin'
+      path: "/signin",
+      name: "signin"
     },
     {
-      path : '/signup',
-      name : 'signup'
+      path: "/signup",
+      name: "signup"
     }
   ]
-})
+});
