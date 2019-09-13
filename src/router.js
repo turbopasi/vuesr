@@ -26,7 +26,7 @@ export default new Router({
           }
         },
         {
-          path: "controller",
+          path: "dashboard",
           components: {
             default : IndexController,
             one : IndexHome,
@@ -34,11 +34,11 @@ export default new Router({
           },
           meta : {
             showTitle : true,
-            title : "Controller",
+            title : "Dashboard",
             showBreadcrumb : true,
             breadcrumb : [
               { name : 'Home', link : "/" },
-              { name : 'Controller' }
+              { name : 'Dashboard' }
             ]
           }
         },

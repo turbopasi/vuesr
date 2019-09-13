@@ -4,9 +4,9 @@
       "name": "",
       "links": [
         {
-          "name": "Controller",
-          "path": "/controller",
-          "icon": "home-outline",
+          "name": "Dashboard",
+          "path": "/dashboard",
+          "icon": "view-list",
           "badge": "Neu",
           "badgeClass": "is-success"
         }

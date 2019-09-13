@@ -52,6 +52,7 @@
     padding:20px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.02);
     border-radius: 5px;
+    min-height:400px;
   }
 
   .board-single:not(:last-child) {
