@@ -1,4 +1,4 @@
-![vueser - vue user dashboard](https://raw.githubusercontent.com/turbopasi/vue-user-dashboard/master/readme/header-logo.jpg)
+![vueser - vue user dashboard](https://raw.githubusercontent.com/turbopasi/vue-user-dashboard/master/readme/header-logo.png)
 
 # vuesr
 
