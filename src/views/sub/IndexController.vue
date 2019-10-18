@@ -1,6 +1,6 @@
 <template>
   <div id="" class="">
-    <h1>INDEX OF CONTROLLER SUB ROUTE</h1>
+    <h1>SUB ROUTE COMPONENT</h1>
   </div>
 </template>
 

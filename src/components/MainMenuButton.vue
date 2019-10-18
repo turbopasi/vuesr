@@ -4,9 +4,9 @@
   <!-- Includes Icon, Name and optional Pill -->
   <!-- Also renders based on collapse status of main menu -->
 
-  <div class="main-menu-button">
+  <div class="main-menu-button" :class="[button.disabled ? 'disabled' : '']">
 
-    <router-link :to="button.path">
+    <router-link :to="button.path" disabled>
 
       <!-- Nav Link Icon -->
       <div class="button-icon">
@@ -127,8 +127,12 @@
 
   .is-darkmode .button-icon { color:#E1E1E1; }
   .is-darkmode .button-text { color:#E1E1E1; }
+  .is-darkmode .disabled .button-icon { color:#444; }
+  .is-darkmode .disabled .button-text { color:#444; }
 
   .is-lightmode .button-icon { color:#666666; }
   .is-lightmode .button-text { color:#111111; }
+  .is-lightmode .disabled .button-icon { color:#E1E1E1; }
+  .is-lightmode .disabled .button-text { color:#E1E1E1; }
 
 </style>

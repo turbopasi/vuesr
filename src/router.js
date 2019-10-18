@@ -28,9 +28,7 @@ export default new Router({
         {
           path: "dashboard",
           components: {
-            default : IndexController,
-            one : IndexHome,
-            two : IndexController
+            default : IndexController
           },
           meta : {
             showTitle : true,
@@ -43,7 +41,49 @@ export default new Router({
           }
         },
         {
-          path: "engage"
+          path: "engage",
+          components: {
+            default :  IndexController
+          },
+          meta : {
+            showTitle : true,
+            title : "Engage",
+            showBreadcrumb : true,
+            breadcrumb : [
+              { name : 'Home', link : "/" },
+              { name : 'Engange' }
+            ]
+          }
+        },
+        {
+          path: "messages",
+          components: {
+            default :  IndexController
+          },
+          meta : {
+            showTitle : true,
+            title : "Messages",
+            showBreadcrumb : true,
+            breadcrumb : [
+              { name : 'Home', link : "/" },
+              { name : 'Messages' }
+            ]
+          }
+        },
+        {
+          path: "settings",
+          components: {
+            default :  IndexController
+          },
+          meta : {
+            showTitle : true,
+            title : "Settings",
+            showBreadcrumb : true,
+            breadcrumb : [
+              { name : 'Home', link : "/" },
+              { name : 'Settings' }
+            ]
+          }
         }
       ]
     },

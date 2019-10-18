@@ -19,9 +19,9 @@
       "highlight" : false
     },
     {
-      "name" : "Favourites",
-      "path" : "/favourites",
-      "icon" : "star-outline",
+      "name" : "Messages",
+      "path" : "/messages",
+      "icon" : "message-outline",
       "highlight" : true
     }
   ]

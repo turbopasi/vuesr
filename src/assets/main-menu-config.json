@@ -19,8 +19,8 @@
           "name": "Engage",
           "path": "/engage",
           "icon": "face",
-          "badge": 123,
-          "badgeClass": "is-danger"
+          "badge": "",
+          "badgeClass": ""
         }
       ]
     },
@@ -32,7 +32,7 @@
           "path": "/messages",
           "icon": "message-outline",
           "badge": "17",
-          "badgeClass": "is-warning"
+          "badgeClass": "is-danger"
         },
         {
           "name": "Settings",
@@ -40,25 +40,6 @@
           "icon": "settings-outline",
           "badge": "",
           "badgeClass": ""
-        }
-      ]
-    },
-    {
-      "name": "Group Three",
-      "links": [
-        {
-          "name": "Payments",
-          "path": "/payments",
-          "icon": "paypal",
-          "badge": "",
-          "badgeClass": ""
-        },
-        {
-          "name": "Boosts",
-          "path": "/boosts",
-          "icon": "star-outline",
-          "badge": "Active",
-          "badgeClass": "is-info"
         }
       ]
     }
