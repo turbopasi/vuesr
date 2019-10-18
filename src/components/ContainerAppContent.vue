@@ -15,10 +15,17 @@
         v-bind:hotlinks="hotlinks"
       />
 
-      <!-- Slot : Darkmode toggle -->
+      <!-- Slot : Darkmode toggle - TEMP -->
       <div class="field">
         <b-switch v-model="isDarkmode" :rounded="false"></b-switch>
       </div>
+
+      <!-- Above content will be pushed left, below content will be pushed right -->
+      <div class="middle-seperator"></div>
+
+      <top-bar-user
+        v-bind:user="{}"
+      />
 
     </app-content-top-bar>
 
@@ -38,6 +45,7 @@
 
 import AppContentTopBar from "@/components/AppContentTopBar";
 import TopBarHotlinks from "@/components/TopBarHotlinks";
+import TopBarUser from "@/components/TopBarUser";
 import AppContentBreadcrumbs from "@/components/AppContentBreadcrumbs";
 import AppContentBoard from "@/components/AppContentBoard";
 
@@ -46,6 +54,7 @@ export default {
   components: {
     AppContentTopBar,
     TopBarHotlinks,
+    TopBarUser,
     AppContentBreadcrumbs,
     AppContentBoard
   },
@@ -87,5 +96,9 @@ export default {
 
 .app-content.full-width {
   margin-left: 85px;
+}
+
+.middle-seperator {
+  flex:1;
 }
 </style>
