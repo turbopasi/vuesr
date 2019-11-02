@@ -14,7 +14,7 @@ To test the template locally just follow these instructions
 git clone https://github.com/turbopasi/vuesr.git
 
 // enter project folder
-cd vuesr
+cd vuesr/template
 
 // install dependencies
 npm install
