@@ -8,23 +8,7 @@ This project originated from using `@vue/cli` starter template. Its goal is to g
 If you don't know what *Vue* is, I suggest taking a quick look at its [documentation](https://vuejs.org/v2/guide/). It's awesome and I love it !
 
 ## local project setup
-To test the template locally just follow these instructions
-```
-// clone repo
-git clone https://github.com/turbopasi/vuesr.git
-
-// enter project folder
-cd vuesr/template
-
-// install dependencies
-npm install
-
-// Compiles and hot-reloads for development
-npm run serve
-
-// Compiles and minifies for production
-npm run build
-```
+...
 
 ## project structure
 ...
