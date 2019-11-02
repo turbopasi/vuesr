@@ -6,7 +6,7 @@
     <!-- username, and or role of user -->
     <div class="text">
       <p class="upper">John Doe Jr.</p>
-      <p class="lower">Administrator</p>
+      <p class="lower">Moderator</p>
     </div>
 
     <!-- avatar part would hold -->

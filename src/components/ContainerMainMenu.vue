@@ -22,6 +22,7 @@
     <vue-perfect-scrollbar class="scroll-area" :settings="settings" @ps-scroll-y="scrollHandle">
     <main-menu-content
       v-bind:groups="groups"
+      v-bind:badges="badges"
       v-bind:collapsed="shouldBeCollapsed"
       />
     </vue-perfect-scrollbar>
@@ -56,6 +57,7 @@
     computed : {
       isPinned()  	      { return this.$store.state.mainmenu.isPinned },
       groups()            { return this.$store.state.mainmenu.groups },
+      badges()            { return this.$store.state.mainmenu.badges },
       brandText ()        { return this.$store.state.mainmenu.brandText },
       shouldBeCollapsed() { return !this.isHover && !this.isPinned }
     },

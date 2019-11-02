@@ -16,9 +16,9 @@
       />
 
       <!-- Slot : Darkmode toggle - TEMP -->
-      <div class="field">
+      <!-- <div class="field">
         <b-switch v-model="isDarkmode" :rounded="false"></b-switch>
-      </div>
+      </div> -->
 
       <!-- Above content will be pushed left, below content will be pushed right -->
       <div class="middle-seperator"></div>

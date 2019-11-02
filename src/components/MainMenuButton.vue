@@ -20,10 +20,10 @@
       </div>
 
       <!-- Notification Pill if Main Menu is Expanded -->
-      <b-tag rounded class="button-badge" :type="button.badgeClass" v-if="button.badge && !collapsed">{{ button.badge }}</b-tag>
+      <b-tag rounded class="button-badge" :type="badge.class" v-if="badge && !collapsed">{{ badge.text }}</b-tag>
 
       <!-- Notificion Indicator if Main Menu is Collapsed -->
-      <div class="button-badge-indicator has-background-link" v-if="button.badge && collapsed">
+      <div class="button-badge-indicator has-background-link" v-if="badge && collapsed">
         <p></p>
       </div>
 
@@ -37,6 +37,7 @@
   export default {
     name : 'main-menu-button',
     props : {
+      badge : Object,
       button : Object,
       collapsed : Boolean
     }

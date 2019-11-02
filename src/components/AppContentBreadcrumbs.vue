@@ -62,12 +62,13 @@
   }
 
   .inner h1 {
-    padding-right:20px;
     margin : 0px;
     height : 40px;
     display:flex;
     align-items: center;
     margin-right : 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
     font-weight : 300;
   }
 

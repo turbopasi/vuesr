@@ -6,9 +6,7 @@
         {
           "name": "Dashboard",
           "path": "/dashboard",
-          "icon": "view-list",
-          "badge": "Neu",
-          "badgeClass": "is-success"
+          "icon": "view-list"
         }
       ]
     },
@@ -18,9 +16,7 @@
         {
           "name": "Engage",
           "path": "/engage",
-          "icon": "face",
-          "badge": "",
-          "badgeClass": ""
+          "icon": "face"
         }
       ]
     },
@@ -30,18 +26,24 @@
         {
           "name": "Messages",
           "path": "/messages",
-          "icon": "message-outline",
-          "badge": "17",
-          "badgeClass": "is-danger"
+          "icon": "message-outline"
         },
         {
           "name": "Settings",
           "path": "/settings",
-          "icon": "settings-outline",
-          "badge": "",
-          "badgeClass": ""
+          "icon": "settings-outline"
         }
       ]
     }
-  ]
+  ],
+  "badges" : {
+    "Dashboard" : {
+      "text": "Neu",
+      "class": "is-success"
+    },
+    "Messages" : {
+      "text": "17",
+      "class": "is-danger"
+    }
+  }
 }

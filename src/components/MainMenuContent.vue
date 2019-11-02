@@ -18,6 +18,7 @@
       <main-menu-button
         v-for="(button, buttonindex) in group.links"
         :button="button"
+        :badge="badges[button.name] ? badges[button.name] : null"
         :key="buttonindex"
         :collapsed="collapsed"
         />
@@ -38,6 +39,7 @@
     name: 'main-menu-content',
     props: {
       groups : Array,
+      badges : Object,
       collapsed : Boolean
     },
     components : {
