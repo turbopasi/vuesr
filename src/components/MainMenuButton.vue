@@ -16,7 +16,7 @@
 
       <!-- Nav Link Text -->
       <div class="button-text" v-if="!collapsed">
-        <span>{{ button.name }}</span>
+        {{ button.name }}
       </div>
 
       <!-- Notification Pill if Main Menu is Expanded -->
@@ -48,15 +48,14 @@
 
   .main-menu-button {
     padding : 0 15px;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
   }
 
   .main-menu-button a {
-    padding : 10px 17px;
+    padding : 10px 15px;
     overflow: hidden;
     display: flex;
-    align-items: center;
-    line-height: 1.45;
-    letter-spacing: 0.08rem;
     font-weight: 100;
   }
 
@@ -71,14 +70,14 @@
   .button-icon {
     margin-right : 1rem;
     transition : transform 0.2s;
-    display:flex;
-    align-items: center;
   }
 
   .button-text {
     flex : 1;
     transition: transform 0.2s;
-    margin-top: -2px;
+    padding:0;
+    margin:0;
+    letter-spacing: 0.08rem;
   }
 
   .button-badge {
@@ -100,11 +99,14 @@
   }
 
   .button-badge-indicator {
-    height:3px;
+    height:4px;
     background:white;
     position:absolute;
     right:0px;
-    margin-top:0px;
+    top:50%;
+    margin-top:-2px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
 
   // ACTIVE NAV ITEM
