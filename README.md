@@ -7,8 +7,14 @@ This project originated from using `@vue/cli` starter template. Its goal is to g
 
 If you don't know what *Vue* is, I suggest taking a quick look at its [documentation](https://vuejs.org/v2/guide/). It's awesome and I love it !
 
-## local project setup
-...
+## project setup
+First, use vue-cli to create a new project, then add the vue-cli plugin "vuesr". This will setup a project structure with all necessary components.
+
+```
+$ vue create my-project-name
+$ cd my-project-name
+$ vue add vueser
+```
 
 ## project structure
 ...
