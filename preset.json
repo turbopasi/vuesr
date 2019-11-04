@@ -1,4 +1,5 @@
 {
+  "name" : "vue-cli-plugin-vuesr"
   "useConfigFiles": true,
   "cssPreprocessor": "sass",
   "plugins": {
