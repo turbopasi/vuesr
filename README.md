@@ -11,11 +11,18 @@ If you don't know what *Vue* is, I suggest taking a quick look at its [documenta
 
 ## project setup
 First, use vue-cli to create a new project, then add the vue-cli plugin "vuesr". This will setup a project structure with all necessary components.
+You need `vue-cli`, install it, if you haven't yet
 
 ```
-$ vue create my-project-name
-$ cd my-project-name
-$ vue add vueser
+npm install -g @vue/cli
+# OR
+yarn global add @vue/cli
+```
+
+```
+vue create my-project-name
+cd my-project-name
+vue add vueser
 ```
 
 ## project structure
