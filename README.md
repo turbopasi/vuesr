@@ -19,10 +19,12 @@ npm install -g @vue/cli
 yarn global add @vue/cli
 ```
 
+Then create a new project with `vue create`. In the end just add the plugin with `vue add vuesr`. This should create the necessary components, project structure and install dependencies. 
+
 ```
 vue create my-project-name
 cd my-project-name
-vue add vueser
+vue add vuesr
 ```
 
 ## project structure
