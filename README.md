@@ -11,7 +11,12 @@ If you don't know what *Vue* is, I suggest taking a quick look at its [documenta
 
 ## Install template
 
-### Option 1 : Install as plugin to an existing project
+### Option 1 (recommended) : Install as preset along project creation
+```
+vue create --preset turbopasi/vue-cli-plugin-vuesr my-project-name
+```
+
+### Option 2 : Install as plugin to an existing project
 First, use vue-cli to create a new project, then add the vue-cli plugin "vuesr". This will setup a project structure with all necessary components.
 You need `vue-cli`, install it, if you haven't yet
 
@@ -27,11 +32,6 @@ Then create a new project with `vue create`. In the end just add the plugin with
 vue create my-project-name
 cd my-project-name
 vue add vuesr
-```
-
-### Option 2 : Install as preset along project creation
-```
-vue create --preset turbopasi/vue-cli-plugin-vuesr my-project-name
 ```
 
 ## project structure
