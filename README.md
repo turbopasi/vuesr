@@ -9,7 +9,9 @@ If you don't know what *Vue* is, I suggest taking a quick look at its [documenta
 
 ![vueser - vue user dashboard](https://raw.githubusercontent.com/turbopasi/vue-user-dashboard/master/readme/template-preview-1.png)
 
-## project setup
+## Install template
+
+### Option 1 : Install as plugin to an existing project
 First, use vue-cli to create a new project, then add the vue-cli plugin "vuesr". This will setup a project structure with all necessary components.
 You need `vue-cli`, install it, if you haven't yet
 
@@ -19,12 +21,17 @@ npm install -g @vue/cli
 yarn global add @vue/cli
 ```
 
-Then create a new project with `vue create`. In the end just add the plugin with `vue add vuesr`. This should create the necessary components, project structure and install dependencies. 
+Then create a new project with `vue create`. In the end just add the plugin with `vue add vuesr`. This should create the necessary components, project structure and install dependencies.
 
 ```
 vue create my-project-name
 cd my-project-name
 vue add vuesr
+```
+
+### Option 2 : Install as preset along project creation
+```
+vue create --preset turbopasi/vue-cli-plugin-vuesr my-project-name
 ```
 
 ## project structure
