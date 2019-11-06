@@ -9,6 +9,10 @@ module.exports = api => {
     }
   })
 
-  api.render('./template')
+  api.render('./template');
+
+  api.onCreateComplete(() => {
+
+  });
 
 }

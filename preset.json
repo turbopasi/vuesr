@@ -2,10 +2,6 @@
   "useConfigFiles": true,
   "cssPreprocessor": "node-sass",
   "plugins": {
-    "@vue/cli-plugin-babel": {},
-    "@vue/cli-plugin-vuex": {},
-    "@vue/cli-plugin-router": {
-      "historyMode": true
-    }
+    "@vue/cli-plugin-babel": {}
   }
 }
