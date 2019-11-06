@@ -1,4 +1,6 @@
-module.exports = api => {
+const fs = require('fs');
+
+module.exports = (api, options, preset) => {
 
   api.extendPackage({
     dependencies: {
@@ -12,6 +14,8 @@ module.exports = api => {
   api.render('./template');
 
   api.onCreateComplete(() => {
+
+    // Delete unnecessary files afterwards
 
   });
 
