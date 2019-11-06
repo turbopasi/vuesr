@@ -1,0 +1,42 @@
+{
+  "groups": [
+    {
+      "name": "Help",
+      "links": [
+        {
+          "name": "Documentation",
+          "path": "/"
+        },
+        {
+          "name": "Tutorials",
+          "path": "/"
+        },
+        {
+          "name": "Community",
+          "path": "/"
+        }
+      ]
+    },
+    {
+      "name": "Company",
+      "links": [
+        {
+          "name": "Privacy Policy",
+          "path": "/"
+        },
+        {
+          "name": "Disclaimer",
+          "path": "/"
+        },
+        {
+          "name": "About Us",
+          "path": "/"
+        },
+        {
+          "name": "Jobs",
+          "path": "/"
+        }
+      ]
+    }
+  ]
+}

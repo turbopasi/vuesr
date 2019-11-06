@@ -16,16 +16,14 @@
       />
 
       <!-- Slot : Darkmode toggle - TEMP -->
-      <!-- <div class="field">
+      <div class="field">
         <b-switch v-model="isDarkmode" :rounded="false"></b-switch>
-      </div> -->
+      </div>
 
       <!-- Above content will be pushed left, below content will be pushed right -->
       <div class="middle-seperator"></div>
 
-      <top-bar-user
-        v-bind:user="{}"
-      />
+      <top-bar-user v-bind:user="{}" />
 
     </app-content-top-bar>
 
@@ -38,6 +36,9 @@
     <!-- App Content Board -->
     <app-content-board />
 
+    <!-- Footer Component -->
+    <app-content-footer v-bind:footerGroups="footerGroups" />
+
   </div>
 </template>
 
@@ -48,6 +49,7 @@ import TopBarHotlinks from "@/components/TopBarHotlinks";
 import TopBarUser from "@/components/TopBarUser";
 import AppContentBreadcrumbs from "@/components/AppContentBreadcrumbs";
 import AppContentBoard from "@/components/AppContentBoard";
+import AppContentFooter from "@/components/AppContentFooter";
 
 export default {
   name: "container-app-content",
@@ -56,7 +58,8 @@ export default {
     TopBarHotlinks,
     TopBarUser,
     AppContentBreadcrumbs,
-    AppContentBoard
+    AppContentBoard,
+    AppContentFooter
   },
   props: {
     msg: String
@@ -73,6 +76,9 @@ export default {
     },
     hotlinks() {
       return this.$store.state.topbar.hotlinks;
+    },
+    footerGroups() {
+      return this.$store.state.footer.groups;
     },
     isDarkmode: {
       get() {
