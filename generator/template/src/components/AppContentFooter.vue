@@ -73,17 +73,20 @@
   }
 
   .link {
-      padding:0;
-      margin:0;
-      letter-spacing: 0.08rem;
+    padding:0;
+    margin:0;
+    letter-spacing: 0.08rem;
+    cursor: pointer;
   }
 
   // DARK / LIGHT MODE ADJUSTMENTS
 
   .is-darkmode .group-header { color:#777; }
-  .is-darkmode .link{ color:#E1E1E1; }
+  .is-darkmode .link         { color:#999; }
+  .is-darkmode .link:hover   { color:#FFFFFF; }
 
   .is-lightmode .group-header { color:#999; }
-  .is-lightmode .link{ color:#555; }
+  .is-lightmode .link         { color:#777; }
+  .is-lightmode .link:hover   { color:#000000; }
 
 </style>
