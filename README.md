@@ -12,7 +12,7 @@ If you don't know what *Vue* is, I suggest taking a quick look at its [documenta
 ## Install template
 
 ### 1 . Prerequisites
-In order to create a new project with vue along with a remote preset, you'll `vue-cli`.
+In order to create a new project with vue along with a remote preset, you'll need `vue-cli`.
 ```
 npm install -g @vue/cli
 # OR
