@@ -11,27 +11,19 @@ If you don't know what *Vue* is, I suggest taking a quick look at its [documenta
 
 ## Install template
 
-### Option 1 (recommended) : Install as preset along project creation
-```
-vue create --preset turbopasi/vue-cli-plugin-vuesr my-project-name
-```
-
-### Option 2 : Install as plugin to an existing project
-First, use vue-cli to create a new project, then add the vue-cli plugin "vuesr". This will setup a project structure with all necessary components.
-You need `vue-cli`, install it, if you haven't yet
-
+### 1 . Prerequisites
+In order to create a new project with vue along with a remote preset, you'll `vue-cli`.
 ```
 npm install -g @vue/cli
 # OR
 yarn global add @vue/cli
 ```
 
-Then create a new project with `vue create`. In the end just add the plugin with `vue add vuesr`. This should create the necessary components, project structure and install dependencies.
-
+### 2 . Create new project with --preset (recommended) : Install as preset along project creation
 ```
-vue create my-project-name
+vue create --preset turbopasi/vuesr my-project-name
 cd my-project-name
-vue add vuesr
+npm start serve
 ```
 
 ## project structure
